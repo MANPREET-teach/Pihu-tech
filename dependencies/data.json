@@ -1,0 +1,279 @@
+{
+  "name": "Font Awesome Free",
+  "version": "6.4.0",
+  "description": "Font Awesome Icon Library",
+  "license": {
+    "type": "Multiple",
+    "icons": "CC BY 4.0",
+    "fonts": "SIL OFL 1.1",
+    "code": "MIT License"
+  },
+  "copyright": "Copyright 2023 Fonticons, Inc.",
+  "url": "https://fontawesome.com",
+  "cdn_links": {
+    "css": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+    "alternative_css": [
+      "https://use.fontawesome.com/releases/v6.4.0/css/all.css",
+      "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    ],
+    "webfonts": {
+      "solid": "../webfonts/fa-solid-900.woff2",
+      "regular": "../webfonts/fa-regular-400.woff2",
+      "brands": "../webfonts/fa-brands-400.woff2"
+    }
+  },
+  "base_styles": {
+    "fa": {
+      "font_family": "var(--fa-style-family, \"Font Awesome 6 Free\")",
+      "font_weight": "var(--fa-style, 900)"
+    },
+    "fa_classic": {
+      "font_family": "\"Font Awesome 6 Free\""
+    },
+    "fa_brands": {
+      "font_family": "\"Font Awesome 6 Brands\""
+    }
+  },
+  "size_classes": [
+    { "class": "fa-1x", "size": "1em" },
+    { "class": "fa-2x", "size": "2em" },
+    { "class": "fa-3x", "size": "3em" },
+    { "class": "fa-4x", "size": "4em" },
+    { "class": "fa-5x", "size": "5em" },
+    { "class": "fa-6x", "size": "6em" },
+    { "class": "fa-7x", "size": "7em" },
+    { "class": "fa-8x", "size": "8em" },
+    { "class": "fa-9x", "size": "9em" },
+    { "class": "fa-10x", "size": "10em" },
+    { "class": "fa-2xs", "size": "0.625em", "line_height": "0.1em", "vertical_align": "0.225em" },
+    { "class": "fa-xs", "size": "0.75em", "line_height": "0.08333em", "vertical_align": "0.125em" },
+    { "class": "fa-sm", "size": "0.875em", "line_height": "0.07143em", "vertical_align": "0.05357em" },
+    { "class": "fa-lg", "size": "1.25em", "line_height": "0.05em", "vertical_align": "-0.075em" },
+    { "class": "fa-xl", "size": "1.5em", "line_height": "0.04167em", "vertical_align": "-0.125em" },
+    { "class": "fa-2xl", "size": "2em", "line_height": "0.03125em", "vertical_align": "-0.1875em" }
+  ],
+  "utility_classes": {
+    "fa-fw": "text-align: center; width: 1.25em",
+    "fa-ul": "list-style-type: none; margin-left: var(--fa-li-margin, 2.5em); padding-left: 0",
+    "fa-li": "left: calc(var(--fa-li-width, 2em) * -1); position: absolute; text-align: center; width: var(--fa-li-width, 2em)",
+    "fa-border": "border-radius: var(--fa-border-radius, 0.1em); border: var(--fa-border-width, 0.08em) var(--fa-border-style, solid) var(--fa-border-color, #eee); padding: var(--fa-border-padding, 0.2em 0.25em 0.15em)",
+    "fa-pull-left": "float: left; margin-right: var(--fa-pull-margin, 0.3em)",
+    "fa-pull-right": "float: right; margin-left: var(--fa-pull-margin, 0.3em)"
+  },
+  "animation_classes": {
+    "fa-beat": {
+      "name": "fa-beat",
+      "delay": "var(--fa-animation-delay, 0s)",
+      "direction": "var(--fa-animation-direction, normal)",
+      "duration": "var(--fa-animation-duration, 1s)",
+      "iteration": "var(--fa-animation-iteration-count, infinite)",
+      "timing": "var(--fa-animation-timing, ease-in-out)"
+    },
+    "fa-bounce": {
+      "name": "fa-bounce",
+      "delay": "var(--fa-animation-delay, 0s)",
+      "direction": "var(--fa-animation-direction, normal)",
+      "duration": "var(--fa-animation-duration, 1s)",
+      "iteration": "var(--fa-animation-iteration-count, infinite)",
+      "timing": "var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1))"
+    },
+    "fa-fade": {
+      "name": "fa-fade",
+      "delay": "var(--fa-animation-delay, 0s)",
+      "direction": "var(--fa-animation-direction, normal)",
+      "duration": "var(--fa-animation-duration, 1s)",
+      "iteration": "var(--fa-animation-iteration-count, infinite)",
+      "timing": "var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1))"
+    },
+    "fa-beat-fade": {
+      "name": "fa-beat-fade",
+      "delay": "var(--fa-animation-delay, 0s)",
+      "direction": "var(--fa-animation-direction, normal)",
+      "duration": "var(--fa-animation-duration, 1s)",
+      "iteration": "var(--fa-animation-iteration-count, infinite)",
+      "timing": "var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1))"
+    },
+    "fa-flip": {
+      "name": "fa-flip",
+      "delay": "var(--fa-animation-delay, 0s)",
+      "direction": "var(--fa-animation-direction, normal)",
+      "duration": "var(--fa-animation-duration, 1s)",
+      "iteration": "var(--fa-animation-iteration-count, infinite)",
+      "timing": "var(--fa-animation-timing, ease-in-out)"
+    },
+    "fa-shake": {
+      "name": "fa-shake",
+      "delay": "var(--fa-animation-delay, 0s)",
+      "direction": "var(--fa-animation-direction, normal)",
+      "duration": "var(--fa-animation-duration, 1s)",
+      "iteration": "var(--fa-animation-iteration-count, infinite)",
+      "timing": "var(--fa-animation-timing, linear)"
+    },
+    "fa-spin": {
+      "name": "fa-spin",
+      "delay": "var(--fa-animation-delay, 0s)",
+      "direction": "var(--fa-animation-direction, normal)",
+      "duration": "var(--fa-animation-duration, 2s)",
+      "iteration": "var(--fa-animation-iteration-count, infinite)",
+      "timing": "var(--fa-animation-timing, linear)"
+    }
+  },
+  "transform_classes": [
+    { "class": "fa-rotate-90", "transform": "rotate(90deg)" },
+    { "class": "fa-rotate-180", "transform": "rotate(180deg)" },
+    { "class": "fa-rotate-270", "transform": "rotate(270deg)" },
+    { "class": "fa-flip-horizontal", "transform": "scaleX(-1)" },
+    { "class": "fa-flip-vertical", "transform": "scaleY(-1)" },
+    { "class": "fa-flip-both", "transform": "scale(-1)" }
+  ],
+  "stack_classes": {
+    "fa-stack": {
+      "display": "inline-block",
+      "height": "2em",
+      "line_height": "2em",
+      "position": "relative",
+      "vertical_align": "middle",
+      "width": "2.5em"
+    },
+    "fa-stack-1x": {
+      "left": "0",
+      "position": "absolute",
+      "text_align": "center",
+      "width": "100%",
+      "z_index": "var(--fa-stack-z-index, auto)"
+    },
+    "fa-stack-2x": {
+      "left": "0",
+      "position": "absolute",
+      "text_align": "center",
+      "width": "100%",
+      "z_index": "var(--fa-stack-z-index, auto)",
+      "font_size": "2em"
+    }
+  },
+  "icons": {
+    "numeric": {
+      "fa-0": "30",
+      "fa-1": "31",
+      "fa-2": "32",
+      "fa-3": "33",
+      "fa-4": "34",
+      "fa-5": "35",
+      "fa-6": "36",
+      "fa-7": "37",
+      "fa-8": "38",
+      "fa-9": "39"
+    },
+    "alphabetical": {
+      "fa-a": "41",
+      "fa-b": "42",
+      "fa-c": "43",
+      "fa-d": "44",
+      "fa-e": "45",
+      "fa-f": "46",
+      "fa-g": "47",
+      "fa-h": "48",
+      "fa-i": "49",
+      "fa-j": "4a",
+      "fa-k": "4b",
+      "fa-l": "4c",
+      "fa-m": "4d",
+      "fa-n": "4e",
+      "fa-o": "4f",
+      "fa-p": "50",
+      "fa-q": "51",
+      "fa-r": "52",
+      "fa-s": "53",
+      "fa-t": "54",
+      "fa-u": "55",
+      "fa-v": "56",
+      "fa-w": "57",
+      "fa-x": "58",
+      "fa-y": "59",
+      "fa-z": "5a"
+    },
+    "popular": [
+      { "name": "fa-heart", "unicode": "f004", "category": "regular" },
+      { "name": "fa-star", "unicode": "f005", "category": "regular" },
+      { "name": "fa-user", "unicode": "f007", "category": "regular" },
+      { "name": "fa-home", "unicode": "f015", "category": "regular" },
+      { "name": "fa-envelope", "unicode": "f0e0", "category": "regular" },
+      { "name": "fa-phone", "unicode": "f095", "category": "regular" },
+      { "name": "fa-search", "unicode": "f002", "category": "regular" },
+      { "name": "fa-cog", "unicode": "f013", "category": "regular" },
+      { "name": "fa-clock", "unicode": "f017", "category": "regular" },
+      { "name": "fa-calendar", "unicode": "f133", "category": "regular" },
+      { "name": "fa-check", "unicode": "f00c", "category": "regular" },
+      { "name": "fa-times", "unicode": "f00d", "category": "regular" },
+      { "name": "fa-download", "unicode": "f019", "category": "regular" },
+      { "name": "fa-upload", "unicode": "f093", "category": "regular" },
+      { "name": "fa-lock", "unicode": "f023", "category": "regular" },
+      { "name": "fa-unlock", "unicode": "f09c", "category": "regular" }
+    ],
+    "brands": [
+      { "name": "fa-python", "unicode": "f3e2", "brand": "python" },
+      { "name": "fa-java", "unicode": "f4e4", "brand": "java" },
+      { "name": "fa-js", "unicode": "f3b8", "brand": "javascript" },
+      { "name": "fa-html5", "unicode": "f13b", "brand": "html5" },
+      { "name": "fa-css3", "unicode": "f13c", "brand": "css3" },
+      { "name": "fa-react", "unicode": "f41b", "brand": "react" },
+      { "name": "fa-node", "unicode": "f419", "brand": "nodejs" },
+      { "name": "fa-php", "unicode": "f457", "brand": "php" },
+      { "name": "fa-github", "unicode": "f09b", "brand": "github" },
+      { "name": "fa-facebook", "unicode": "f09a", "brand": "facebook" },
+      { "name": "fa-twitter", "unicode": "f099", "brand": "twitter" },
+      { "name": "fa-instagram", "unicode": "f16d", "brand": "instagram" },
+      { "name": "fa-linkedin", "unicode": "f08c", "brand": "linkedin" },
+      { "name": "fa-youtube", "unicode": "f167", "brand": "youtube" },
+      { "name": "fa-google", "unicode": "f1a0", "brand": "google" },
+      { "name": "fa-microsoft", "unicode": "f3ca", "brand": "microsoft" },
+      { "name": "fa-apple", "unicode": "f179", "brand": "apple" },
+      { "name": "fa-android", "unicode": "f17b", "brand": "android" },
+      { "name": "fa-aws", "unicode": "f375", "brand": "aws" },
+      { "name": "fa-docker", "unicode": "f395", "brand": "docker" }
+    ],
+    "categories": {
+      "python": "fa-python",
+      "dsa": "fa-project-diagram",
+      "assembly": "fa-microchip",
+      "networking": "fa-network-wired",
+      "computer": "fa-laptop-code",
+      "data": "fa-database",
+      "cloud": "fa-cloud",
+      "mobile": "fa-mobile-alt",
+      "web": "fa-globe"
+    }
+  },
+  "accessibility": {
+    "sr-only": "position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0",
+    "sr-only-focusable:not(:focus)": "position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0"
+  },
+  "font_families": {
+    "brands": {
+      "name": "Font Awesome 6 Brands",
+      "weight": 400,
+      "style": "normal"
+    },
+    "regular": {
+      "name": "Font Awesome 6 Free",
+      "weight": 400,
+      "style": "normal"
+    },
+    "solid": {
+      "name": "Font Awesome 6 Free",
+      "weight": 900,
+      "style": "normal"
+    }
+  },
+  "usage_examples": {
+    "html": [
+      "<i class=\"fas fa-heart\"></i>",
+      "<i class=\"fab fa-python\"></i>",
+      "<i class=\"far fa-star\"></i>",
+      "<span class=\"fa-stack\"><i class=\"fas fa-circle\"></i><i class=\"fas fa-flag\"></i></span>"
+    ],
+    "css": [
+      ".my-icon:before { content: \"\\f004\"; font-family: \"Font Awesome 6 Free\"; font-weight: 900; }"
+    ]
+  }
+}
