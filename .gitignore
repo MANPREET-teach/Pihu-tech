@@ -3,3 +3,7 @@
 
 # Allow git config files
 !.gitignore
+
+# Allow tracking files inside the website project folder
+!cyber-help website/
+!cyber-help website/**
