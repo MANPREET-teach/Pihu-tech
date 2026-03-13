@@ -4,6 +4,10 @@
 # Allow git config files
 !.gitignore
 
+# Allow GitHub Actions workflows
+!.github/
+!.github/**
+
 # Allow tracking files inside the website project folder
-!cyber-help website/
-!cyber-help website/**
+!cyber-help-website/
+!cyber-help-website/**
