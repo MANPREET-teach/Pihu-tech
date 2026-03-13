@@ -1,0 +1,320 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberHelp · Digital Security Hub</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <i class="fas fa-shield-halved"></i>
+        <span>Cyber<span style="color: var(--accent);">Help</span></span>
+      </div>
+      <div class="nav-links">
+        <a href="#" class="active" data-page="home">Home</a>
+        <a href="#" data-page="services">Services</a>
+        <a href="#" data-page="tools">Tools</a>
+        <a href="#" data-page="contact">Contact</a>
+      </div>
+      <button class="btn-outline" id="emergencyBtn">
+        <i class="fas fa-exclamation-triangle"></i> Incident
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Emergency Banner -->
+    <div class="emergency-bar">
+      <span><i class="fas fa-bolt"></i> <strong>Active threats?</strong> 24/7 support available</span>
+      <button class="emergency-highlight" id="panicBtn">
+        <i class="fas fa-phone-alt"></i> Emergency Hotline
+      </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home-section">
+      <div class="hero-content">
+        <span class="hero-badge"><i class="fas fa-check-circle"></i> Real-time support</span>
+        <h1>Cybersecurity help when you need it most</h1>
+        <p>Instant assistance against threats, malware, or breaches. Human experts + AI tools — free for everyone.</p>
+        
+        <!-- Advanced Search -->
+        <div class="search-help">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Search for help (e.g., phishing, malware, ransomware...)">
+          <button id="searchBtn">Search</button>
+        </div>
+        
+        <div class="search-filters">
+          <span class="search-filter-chip active" data-filter="all"><i class="fas fa-globe"></i> All</span>
+          <span class="search-filter-chip" data-filter="guides"><i class="fas fa-book"></i> Guides</span>
+          <span class="search-filter-chip" data-filter="tools"><i class="fas fa-tools"></i> Tools</span>
+          <span class="search-filter-chip" data-filter="forum"><i class="fas fa-comments"></i> Forum</span>
+          <span class="search-filter-chip" data-filter="experts"><i class="fas fa-user-tie"></i> Experts</span>
+        </div>
+        
+        <div class="search-results" id="searchResults"></div>
+
+        <!-- Stats -->
+        <div class="hero-stats">
+          <div class="stat-item"><h3>500+</h3><span>experts</span></div>
+          <div class="stat-item"><h3>24/7</h3><span>response</span></div>
+          <div class="stat-item"><h3>10k+</h3><span>cases solved</span></div>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <i class="fas fa-shield"></i>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services-section" style="display: none;">
+      <div class="section-header">
+        <h2>Our Security Services</h2>
+        <a href="#" class="view-all-link">view all <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="grid-3">
+        <div class="service-card">
+          <div class="icon-bg"><i class="fas fa-skull-crosswalk"></i></div>
+          <h3>Malware removal</h3>
+          <p>Remote or on-device cleaning by certified analysts. 24/7 emergency removal available.</p>
+          <a href="#" class="card-link" data-service="malware">Start removal <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="icon-bg"><i class="fas fa-envelope-shield"></i></div>
+          <h3>Phishing alert</h3>
+          <p>Report suspicious emails, get instant verdict. AI-powered phishing detection.</p>
+          <a href="#" class="card-link" data-service="phishing">Forward email <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="icon-bg"><i class="fas fa-lock"></i></div>
+          <h3>Account hacked</h3>
+          <p>Step-by-step recovery & breach assessment. Account recovery specialists.</p>
+          <a href="#" class="card-link" data-service="hacked">Secure account <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="icon-bg"><i class="fas fa-network-wired"></i></div>
+          <h3>Network Security</h3>
+          <p>Firewall configuration, intrusion detection, and network monitoring.</p>
+          <a href="#" class="card-link" data-service="network">Secure network <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="icon-bg"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Mobile Security</h3>
+          <p>iOS/Android malware scan, privacy check, and security configuration.</p>
+          <a href="#" class="card-link" data-service="mobile">Secure device <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="icon-bg"><i class="fas fa-cloud"></i></div>
+          <h3>Cloud Security</h3>
+          <p>Cloud account audit, permission review, and breach investigation.</p>
+          <a href="#" class="card-link" data-service="cloud">Audit cloud <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Panel -->
+    <div class="tools-panel" id="tools-section">
+      <h2 style="font-size: 2rem;">🛠️ Cyber Security Tools</h2>
+      <p>Try our free security tools</p>
+
+      <div class="tools-grid">
+        <!-- Hash Identifier -->
+        <div class="tool-item">
+          <h4><i class="fas fa-fingerprint"></i> Hash Identifier</h4>
+          <input type="text" class="tool-input" id="hashInput" placeholder="Enter hash (MD5, SHA1, SHA256...)">
+          <button class="btn-tool" id="identifyHash">Identify</button>
+          <button class="btn-tool" id="clearHash">Clear</button>
+          <div class="tool-result" id="hashResult">Enter a hash to identify</div>
+        </div>
+
+        <!-- Port Scanner -->
+        <div class="tool-item">
+          <h4><i class="fas fa-plug"></i> Port Scanner</h4>
+          <input type="text" class="tool-input" id="portInput" value="scanme.nmap.org" placeholder="Host or IP">
+          <button class="btn-tool" id="scanPorts">Quick Scan</button>
+          <button class="btn-tool" id="scanCommonPorts">Common Ports</button>
+          <div class="tool-result" id="portResult">Click scan to start</div>
+        </div>
+
+        <!-- Password Generator -->
+        <div class="tool-item">
+          <h4><i class="fas fa-key"></i> Password Generator</h4>
+          <div class="password-display" id="passwordDisplay">P@ssw0rd123!</div>
+          <button class="btn-tool" id="generatePass">Generate</button>
+          <button class="btn-tool" id="copyPass">Copy</button>
+          <button class="btn-tool" id="checkStrength">Check Strength</button>
+          <div class="password-strength" id="strengthDisplay"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Support Section -->
+    <div class="contact-section" id="contact-section" style="display: none;">
+      <div class="contact-header">
+        <i class="fas fa-headset"></i>
+        <h2>Contact Support</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3>Send us a message</h3>
+          <div class="form-group">
+            <label for="contactName">Full Name</label>
+            <input type="text" id="contactName" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <select id="contactSubject">
+              <option value="malware">Malware Infection</option>
+              <option value="phishing">Phishing Report</option>
+              <option value="hacked">Account Hacked</option>
+              <option value="network">Network Security</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="4" placeholder="Describe your issue..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="contactPriority">Priority</label>
+            <select id="contactPriority">
+              <option value="low">Low - General inquiry</option>
+              <option value="medium">Medium - Need assistance</option>
+              <option value="high">High - Urgent issue</option>
+              <option value="critical">Critical - Active attack</option>
+            </select>
+          </div>
+          <button class="btn-primary" id="submitContact">Submit Ticket</button>
+        </div>
+        
+        <div class="contact-info">
+          <h3>Support Information</h3>
+          <div class="contact-info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h4>Emergency Hotline</h4>
+              <p>+1 (555) 237-8247 (24/7)</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email Support</h4>
+              <p>support@cyberhelp.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-comment"></i>
+            <div>
+              <h4>Live Chat</h4>
+              <p>Available 24/7</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Response Time</h4>
+              <p>Critical: &lt;5 min<br>High: &lt;30 min<br>Medium: &lt;2 hrs<br>Low: &lt;24 hrs</p>
+            </div>
+          </div>
+          <div class="support-hours">
+            <i class="fas fa-shield-alt"></i>
+            <h4>24/7 Emergency Response</h4>
+            <p>Immediate assistance for active threats</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enhanced Live Chat -->
+    <div class="chat-preview" id="chat-section">
+      <div class="chat-header">
+        <i class="fas fa-headset"></i>
+        <h3>Live Cyber Assistant</h3>
+        <span class="online-badge">🟢 5 experts online</span>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="msg support">👋 Hello! I'm your security assistant. How can I help you today?</div>
+        <div class="msg system">📢 Type /help for available commands</div>
+      </div>
+      
+      <div class="chat-typing" id="chatTyping">Assistant is typing...</div>
+
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Type your message or /help for commands...">
+        <button id="sendMessage">Send</button>
+      </div>
+      
+      <div class="chat-commands">
+        <span class="chat-command" data-command="/help">/help</span>
+        <span class="chat-command" data-command="/tools">/tools</span>
+        <span class="chat-command" data-command="/contact">/contact</span>
+        <span class="chat-command" data-command="/emergency">/emergency</span>
+        <span class="chat-command" data-command="/scan">/scan</span>
+        <span class="chat-command" data-command="/clear">/clear</span>
+      </div>
+
+      <div class="chat-suggestions">
+        <button class="suggestion-chip" data-suggestion="malware">💻 Malware help</button>
+        <button class="suggestion-chip" data-suggestion="phishing">🎣 Phishing</button>
+        <button class="suggestion-chip" data-suggestion="hacked">🔓 Account hacked</button>
+        <button class="suggestion-chip" data-suggestion="password">🔐 Password safety</button>
+        <button class="suggestion-chip" data-suggestion="ransomware">💰 Ransomware</button>
+        <button class="suggestion-chip" data-suggestion="2fa">📱 2FA setup</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Support Tickets Modal -->
+  <div class="modal" id="ticketsModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Your Support Tickets</h2>
+        <button class="modal-close" id="closeModal">&times;</button>
+      </div>
+      <div class="ticket-list" id="ticketList">
+        <!-- Tickets will be displayed here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><i class="fas fa-shield"></i> CyberHelp — Free, Fast, Trusted</div>
+      <div>📞 Emergency: +1 (555) 237-8247</div>
+      <div>
+        <a href="#" id="viewTickets" style="color: var(--primary); text-decoration: none; margin-right: 1rem;">My Tickets</a>
+        © 2025 CyberHelp
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Main JavaScript -->
+  <script src="../javascript/script.js"></script>
+</body>
+</html>
