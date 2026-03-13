@@ -3,7 +3,3 @@
 
 # Allow git config files
 !.gitignore
-
-# Allow the website project folder and its contents
-!/cyber-help website/
-!/cyber-help website/**
